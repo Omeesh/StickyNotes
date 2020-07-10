@@ -20,7 +20,7 @@ class CoreContext: UIView {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         
         let managedContext = appDelegate.persistentContainer.viewContext
-        let entity = NSEntityDescription.entity(forEntityName: "Location", in: managedContext)!
+        guard let entity = NSEntityDescription.entity(forEntityName: "Location", in: managedContext) else {return}
         
         let location = NSManagedObject(entity: entity, insertInto: managedContext)
         location.setValue(Float(position.x), forKeyPath: "x")
