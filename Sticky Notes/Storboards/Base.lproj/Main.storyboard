@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sticky_Notes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qlR-ne-97t">
+                                <rect key="frame" x="107" y="353" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ztg-KD-iWd">
+                                <rect key="frame" x="107" y="353" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fAY-OG-hj4">
+                                <rect key="frame" x="107" y="353" width="200" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptm-Fe-sAr">
+                                        <rect key="frame" x="10" y="10" width="180" height="180"/>
+                                        <string key="text">• Hi,
+• I am a sticky Note.
+• You can folat me aound.
+• You can pin to zoom to see more dummy text.
+• Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+
+</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fAY-OG-hj4" secondAttribute="height" id="Edp-lv-fXd"/>
+                                    <constraint firstAttribute="trailing" secondItem="ptm-Fe-sAr" secondAttribute="trailing" constant="10" id="GHB-EK-DCS"/>
+                                    <constraint firstAttribute="bottom" secondItem="ptm-Fe-sAr" secondAttribute="bottom" constant="10" id="OF2-Fb-Q8W"/>
+                                    <constraint firstItem="ptm-Fe-sAr" firstAttribute="top" secondItem="fAY-OG-hj4" secondAttribute="top" constant="10" id="OdO-PR-e3a"/>
+                                    <constraint firstItem="ptm-Fe-sAr" firstAttribute="leading" secondItem="fAY-OG-hj4" secondAttribute="leading" constant="10" id="ZT0-Aj-xjX"/>
+                                    <constraint firstAttribute="height" constant="200" id="u3j-Lh-ile">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="400"/>
+                                    </constraint>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ztg-KD-iWd" firstAttribute="leading" secondItem="fAY-OG-hj4" secondAttribute="leading" id="2yh-fZ-Uh8"/>
+                            <constraint firstItem="fAY-OG-hj4" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="37v-vZ-rb4"/>
+                            <constraint firstItem="ztg-KD-iWd" firstAttribute="top" secondItem="fAY-OG-hj4" secondAttribute="top" id="3G2-r5-xAH"/>
+                            <constraint firstItem="ztg-KD-iWd" firstAttribute="bottom" secondItem="fAY-OG-hj4" secondAttribute="bottom" id="9hy-fV-FgE"/>
+                            <constraint firstItem="qlR-ne-97t" firstAttribute="bottom" secondItem="ztg-KD-iWd" secondAttribute="bottom" id="Fp4-d9-YVg"/>
+                            <constraint firstItem="qlR-ne-97t" firstAttribute="trailing" secondItem="ztg-KD-iWd" secondAttribute="trailing" id="GXH-yA-1Ir"/>
+                            <constraint firstItem="qlR-ne-97t" firstAttribute="top" secondItem="ztg-KD-iWd" secondAttribute="top" id="Ggd-IA-706"/>
+                            <constraint firstItem="ztg-KD-iWd" firstAttribute="trailing" secondItem="fAY-OG-hj4" secondAttribute="trailing" id="i67-9j-rnG"/>
+                            <constraint firstItem="qlR-ne-97t" firstAttribute="leading" secondItem="ztg-KD-iWd" secondAttribute="leading" id="uS4-8r-8Kg"/>
+                            <constraint firstItem="fAY-OG-hj4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vkU-bi-Hbb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="stickyHeight" destination="u3j-Lh-ile" id="QOt-ui-DqX"/>
+                        <outlet property="stickyView" destination="fAY-OG-hj4" id="fo1-fq-yaY"/>
+                        <outletCollection property="bgViews" destination="ztg-KD-iWd" collectionClass="NSMutableArray" id="XYw-Wd-7Jc"/>
+                        <outletCollection property="bgViews" destination="qlR-ne-97t" collectionClass="NSMutableArray" id="guz-FH-tJW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="113.83928571428571"/>
+        </scene>
+    </scenes>
+</document>
